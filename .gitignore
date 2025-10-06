@@ -1,0 +1,9 @@
+.vscode
+
+quartus_proj/db/
+quartus_proj/incremental_db/
+quartus_proj/simulation/
+quartus_proj/timing/
+quartus_proj/testbench/
+quartus_proj/*_sim/
+quartus_proj/output_files/
