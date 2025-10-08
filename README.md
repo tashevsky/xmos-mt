@@ -1,7 +1,7 @@
 # XMOS-like Multithreaded RISC-V Processor
 
 ## Introduction
-> Task: You have some design of a multithreaded RISC-V processor that you need to refactor. Additionaly you should implement some logic and synthesize this design.
+> Task: You have some design of a multithreaded RISC-V processor that you need to refactor. Additionaly you should implement some logic and synthesize this design for FPGA. The only thing you know that is can be simulated, so you must make sure that your module will sythesize correctly to desired megafuctions.
 
 ## Prerequisites
 - Quartus® Prime Software Suite (Starter Edition will be sufficient);
@@ -55,7 +55,7 @@ Note that special CSR registers (like `mcycle`) are handled in CSR module.
 Currently this processor implements a certain amount of basic CSRs.
 
 | CSR name | Memory Address  | Description           | Read/Write Access |
-|:---------|:---------------:|:---------------------:|:------------------|
+|:---------|:----------------|:----------------------|:------------------|
 | misa     | 0x300           | Machine ISA           | Readonly          |
 | mcycle   | 0xB00           | Machine Cycle Counter | Readonly          |
 
