@@ -1,5 +1,7 @@
 # XMOS-like Multithreaded RISC-V Processor
 
+![RTL](media/rtl.png "RTL")
+
 ## Introduction
 > Task: You have some design of a multithreaded RISC-V processor that you need to refactor. Additionaly you should implement some logic and synthesize this design for FPGA. The only thing you know that is can be simulated, so you must make sure that your module will sythesize correctly to desired megafuctions.
 
