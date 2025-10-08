@@ -261,12 +261,13 @@ module rv_cpu_top
 
     rv_csr csr (
         .clk(~clk),
+        .rst_n(rst),
+        .en(hart6_out[3]),
         .csr_addr_out(r3l3_imm[11:0]),
         .csr_addr_in(r6l6_imm[11:0]),
         .csr_in(r6l6_Rez),
         .csr_out(l3r4_CSR),
-        .csr_wr(r6l6_csr_wr),
-        .en(hart6_out[3])
+        .csr_wr(r6l6_csr_wr)
         //.en(1'b1)
     );
 

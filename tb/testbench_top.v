@@ -1,5 +1,5 @@
-`timescale 1ns/1ns
-`include "rv_cpu_top.v"
+`timescale 1ns/100ps
+
 module testbench;
    reg        clk;
    reg        rst_n;
@@ -9,10 +9,10 @@ module testbench;
    rv_cpu_top top
    (
          // Inputs
-         .clk     ( clk     ),
-         .rst   ( rst_n   ),
+         .clk(clk),
+         .rst(rst_n),
          // Outputs
-         .Data_out ( D_out )
+         .Data_out(D_out)
    ); 
    
    initial begin

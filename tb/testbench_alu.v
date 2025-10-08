@@ -1,14 +1,6 @@
-`include "rv_alu_v.v"
-`timescale 10ns/1ns
-/*
-  input [6:0] opcode,
-  input [2:0] funct3,
-  input [6:0] funct7,
-  input [31:0] Op1,
-  input [31:0] Op2,
-  output reg [31:0] Rez
-*/ 
-module testbench; // input and output test signals
+`timescale 1ns/100ps
+
+module testbench;
   reg  [31:0] inst;
 //wire [31:0] imm;    
   reg [6:0] opcode;
